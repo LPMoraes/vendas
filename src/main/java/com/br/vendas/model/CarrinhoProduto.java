@@ -1,5 +1,6 @@
 package com.br.vendas.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,11 +23,11 @@ public class CarrinhoProduto implements Serializable {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id_carrinho", foreignKey = @ForeignKey(name = "FK_carrinho_produto_1"), nullable = false)
+    @JoinColumn(name = "id_carrinho", nullable = false)
     private Carrinho carrinho;
 
     @ManyToOne
-    @JoinColumn(name = "id_produto", foreignKey = @ForeignKey(name = "FK_carrinho_produto_2"), nullable = false)
+    @JoinColumn(name = "id_produto",  nullable = false)
     private Produto produto;
 
 }

@@ -20,11 +20,11 @@ public class ItemFiscal implements Serializable{
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id_documento", foreignKey = @ForeignKey(name = "FK_item_documento"), nullable = false)
+    @JoinColumn(name = "id_documento", nullable = false)
     private DocumentoFiscal documento;
 
     @ManyToOne
-    @JoinColumn(name = "id_produto", foreignKey = @ForeignKey(name = "FK_item_produto"), nullable = false)
+    @JoinColumn(name = "id_produto",  nullable = false)
     private Produto produto;
 
 }

@@ -1,5 +1,7 @@
 package com.br.vendas.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +24,6 @@ public class Carrinho implements Serializable {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente", foreignKey = @ForeignKey(name = "FK_carrinho_cliente"), nullable = false)
+    @JoinColumn(name = "id_cliente", nullable = false)
     private Cliente cliente;
-
 }
