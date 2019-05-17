@@ -25,7 +25,4 @@ public class Carrinho implements Serializable {
     @JoinColumn(name = "id_cliente", foreignKey = @ForeignKey(name = "FK_carrinho_cliente"), nullable = false)
     private Cliente cliente;
 
-    @OneToMany
-    private List<Produto> produtos;
-
 }
