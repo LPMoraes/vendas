@@ -3,11 +3,15 @@
 #Back-End
 
 Foi usado a Liguagem Java. 
+
 FrameWork Spring.
+
 Dependências: Data, Lombok, Web, JPA, Hibernate.
+
 Estrutura Rest.
 
 #Banco de Dados usado foi o MySQL.
+
 Para gerar as tabelas no banco através do mapeamento será necessário setar o parâmentro para 'create' na instrução abaixo:
 
 spring.jpa.hibernate.ddl-auto=create 
@@ -20,13 +24,17 @@ O caminho absoluto para o arquivo 'application.properties' onde deverá ser feit
 vendas/src/main/resources
 
 As outras informaçes que devem ser modificadas no arquivo 'application.properties' são:
+
 - Nome do schema (que deve ser criado antes de fazer o mapeamento)
+
 - Usuário e senha para fazer a conexão.
 
 #Front-End
+
 Foi utilizado o PostMan para fazer as requisições.
+
 Rota para fazer uma compra.
- http://localhost:8080/compra
+``` POST /compra ```
  
  A estrutura do JSON para submeter o carrinho:
  
