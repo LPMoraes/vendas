@@ -29,8 +29,8 @@ Rota para fazer uma compra.
  http://localhost:8080/compra
  
  A estrutura do JSON para submeter o carrinho:
- #Caso (1)
- No JSON abaixo será criado o usuário e produtos no banco de dados aos mesmo tempo que é feita a compra.
+ 
+ #Caso (1)  No JSON abaixo será criado o usuário e produtos no banco de dados aos mesmo tempo que é feita a compra.
 
 ```
 {
